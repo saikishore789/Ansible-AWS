@@ -1,7 +1,8 @@
 ---
 - name: create ec2 instance
-  hosts: 172.31.40.23
+  hosts: server
   become: false
+  connection: local
   become_method: sudo
   gather_facts: true
   roles:
